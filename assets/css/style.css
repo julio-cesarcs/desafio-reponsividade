@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:wght@400;800&display=swap');
+
+/*
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Open Sans', sans-serif;
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-clara: #FFFFFF;
+    --cor-escura: #23272A;
+    --cor-cinza: #F6F6F6;
+}
+
+body {
+    min-width: 375px;
+}
+
+header{
+    background-image: url(../images/header-background-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 32rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    line-height: 2rem;
+    letter-spacing: 0em;
+    padding: 0 24px;
+}
+
+.cabecalho{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+header .cabecalho h1 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2rem;
+    color: var(--cor-clara);
+    width: 18rem;
+    text-align: left;
+    letter-spacing: 0.1rem;
+}
+
+header .cabecalho p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--cor-clara);
+    width: 100%;
+    text-align: left;
+    line-height: 1.2rem;
+    letter-spacing: 0em;
+}
+
+header .cabecalho button {
+    width: 100%;
+    height: 4rem;
+    border-radius: 4rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+}
+
+.fundo-escuro {
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+}
+
+.fundo-cinza {
+    background-color: var(--cor-cinza);
+}
+
+
+section,
+article {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    padding: 40px 24px;
+    gap: 1rem;
+}
+
+section .container img,
+article .container img {
+    width: 100%;
+}
+
+.container {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+section .container h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    line-height: 54px;
+}
+
+section .container p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #23272A;
+}
+
+section .container h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.container p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+article .container h1 {
+    font-family: Luckiest Guy;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+footer {
+    background-color: var(--cor-escura);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    height: 2rem;
+}
+
+
+footer img {
+    height: 1.5rem;
+}
+
+@media screen and (min-width: 601px) {
+
+    body {
+        margin: auto;
+        max-width: 100vw;
+    }
+
+    header,
+    footer,
+    section,
+    article {
+        max-width: 100%;
+    }
+
+
+    header {
+        background-image: url(../images/header-background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 28rem;
+        gap: 2rem
+    }
+
+    .cabecalho{
+        max-width: 800px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    header .cabecalho h1 {
+        text-align: center;
+        font-size: 56px;
+        width: 20rem;
+        line-height: 4rem;
+    }
+
+    header .cabecalho p {
+        width: 100%;
+        line-height: 1.5rem; 
+        text-align: center;
+
+    }
+
+    header .cabecalho button {
+        height: 3rem;
+    }
+
+    .botoes {
+        flex-direction: row;
+        width: 35rem;
+    }
+
+    
+    section {
+        align-items: center;
+        justify-content: center;
+        height: 28rem;
+    }
+
+    section .container {
+        flex-direction: row;
+        height: 22rem;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        max-width: 1200px;
+        gap: 1rem;
+        max-width: 60rem;
+    }
+
+    .imagem{
+        max-width: 33rem;
+    }
+
+    .texto{
+        width: 384px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 24rem;
+    }
+
+    article .container img {
+        max-width: 49rem;
+    }
+  
+    article {
+        display: flex;
+        align-items: center;
+    }
+
+    section .ordem-inversa {
+        flex-direction: row-reverse;
+    }
+
+
+    article .container h1 {
+        text-align: center;
+    }
+
+    
+    footer {
+        height: 5rem;
+    }
+
+    footer img {
+        height: 3rem;
+    }
+
+}
